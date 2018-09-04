@@ -20,6 +20,6 @@ int main (void) {
 		anObject.getguess();
 		flag = anObject.checkgues()
 	}
-    cout << "Thanks for playing \n << endl;
+    cout << "Thanks for playing \n" << endl;
     return 0;}
 
