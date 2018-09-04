@@ -18,7 +18,7 @@ int main (void) {
 	while (flag == false)
 	{
 		anObject.getguess();
-		flag = anObject.checkguess()
+		flag = anObject.checkguess();
 	}
     cout << "Thanks for playing \n" << endl;
     return 0;}
