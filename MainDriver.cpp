@@ -8,7 +8,9 @@
  ***********************************************************/
 
 #include <iostream>
-#include "TestClass.h"
+// undefined reference to `TestClass::getguess()` -> included TestClass.cpp
+// source : https://stackoverflow.com/questions/39759541/undefined-reference-to-classclass-error
+#include "TestClass.cpp"
 using namespace std;
 
 int main (void) {
@@ -18,8 +20,10 @@ int main (void) {
 	while (flag == false)
 	{
 		anObject.getguess();
+		// missing s for the function checkguess() -> added s
 		flag = anObject.checkguess();
 	}
+	// missing " at the end of a cout statement. -> added "
     cout << "Thanks for playing \n" << endl;
     return 0;}
 
